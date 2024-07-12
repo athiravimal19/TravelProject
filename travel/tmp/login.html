@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+ <style>
+        input{
+  width: 70%;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: pink;
+  color:blue;
+}
+input[type=submit]{
+        background-color:red;
+        color: yellow;
+        margin: 2px 0;
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color:purple;">
+<form action="login" method="post">
+  {% csrf_token %}
+  <input type="text" name="usernamel" placeholder="Enter name"><br>
+  <input type="password" name="passwordl" placeholder="Enter password"><br>
+  <input type="submit">
+
+</form>
+</body>
+</html>
